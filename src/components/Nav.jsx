@@ -3,7 +3,7 @@ import inklLogo from '.././images/inkl-logo.svg';
 
 const Nav = () => {
   return (
-    <div className='px-[20px] py-[20px] flex justify-between items-center'>
+    <div className='/px-[192px] px-[24px] py-[20px] flex justify-between items-center'>
         <img src={inklLogo} alt="" height={40} width={80}/>
 
         {/* link to be routed later on */}
