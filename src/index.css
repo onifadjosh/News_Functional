@@ -12,3 +12,39 @@
   font-size: 20px;
   line-height: 28px;
 }
+
+.headBg {
+  position: relative;
+}
+
+.headBg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: inherit;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: grayscale(100%);
+  transition: filter 0.3s ease;
+  z-index: 1;
+}
+.inside{
+  position: relative;
+  z-index: 2;
+}
+.headBg:hover::before {
+  filter: none;
+}
+
+.selection img{
+  height: 100%;
+}
+.selection a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
